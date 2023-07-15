@@ -83,7 +83,7 @@ const FooterStyle = styled.div`
       }
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .footerContainer {
       grid-template-columns: repeat(3, 1fr);
       grap: 2rem;
@@ -93,14 +93,14 @@ const FooterStyle = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .footerContainer {
       grid-template-columns: repeat(2, 1fr);
       grap: 2rem;
     }
   }
 
-  @media (max-width: 426px) {
+  @media (max-width: 640px) {
     .footerContainer {
       grid-template-columns: repeat(1, 1fr);
       padding: 3rem 2rem;
