@@ -220,7 +220,7 @@ const TopNavStyle = styled.div`
     display: block;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .listItem,
     .TopLeft {
       display: none;
