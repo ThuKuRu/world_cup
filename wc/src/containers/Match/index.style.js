@@ -10,34 +10,45 @@ const MatchStyle = styled.div`
   flex-direction: column;
   .matchComponent {
     display: flex;
-    justify-content: center !important;
     align-items: center;
     text-align: center;
     justify-content: center;
-    form {
-      .dateTime {
-        margin-left: 1%;
+    flex-direction: column;
+    .nav {
+        width: 90%;
         display: flex;
-        flex-direction: flex-start;
-        font-size: 20px;
-        font-weight: 900;
-        padding: 0 0 0 1em;
-        border-left: 3px solid #09ae3e;
-        margin-bottom: 1em;
-        &:hover {
-          color: var(--mainColor);
-          cursor: pointer;
+        justify-content: space-between;
+        .dateTime {
+          margin-left: 1%;
+          display: flex;
+          flex-direction: flex-start;
+          font-size: 20px;
+          font-weight: 900;
+          padding: 0 0 0 1em;
+          border-left: 3px solid #09ae3e;
+          margin-bottom: 1em;
+          &:hover {
+            color: var(--mainColor);
+            cursor: pointer;
+          }
         }
-      }
-
+        .icon {
+            cursor: pointer;
+          .appear {
+            display: block;
+          }
+          .active {
+            display: none;
+          }
+        }
+    }
       .matches {
-        margin-top: 1em;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        @media (max-width: 1400px) {
+        @media (max-width: 1280px) {
           grid-template-columns: repeat(3, 1fr);
         }
-        @media (max-width: 1100px) {
+        @media (max-width: 1024px) {
           grid-template-columns: repeat(2, 1fr);
         }
         @media (max-width: 768px) {
