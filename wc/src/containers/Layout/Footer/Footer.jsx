@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="input">
             <input type="email" />
             <button>
-              <span class="material-symbols-outlined">mail</span>
+              <span className="material-symbols-outlined">mail</span>
             </button>
           </div>
         </div>

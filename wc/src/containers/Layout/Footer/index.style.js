@@ -2,10 +2,6 @@ import styled from "styled-components";
 
 const FooterStyle = styled.div`
   --mainColor: #09ae3e;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: #000;
   color: #fff;
   font-family: "Barlow", sans-serif;
