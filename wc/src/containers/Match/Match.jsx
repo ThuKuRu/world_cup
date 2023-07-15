@@ -7,11 +7,18 @@ const Match = ({ setTab, setMatchId }) => {
   const [matches, setMatches] = useState([]);
   const [dates, setDates] = useState([]);
   const [swap, setSwap] = useState(false);
+  const [swaps, setSwaps] = useState([]);
 
   const fetchData = async () => {
     const data = await getMatchList();
     setMatches(Object.values(data.data));
     setDates(Object.keys(data.data));
+    setSwaps(
+      Object.values(data.data)
+        .slice()
+        .reverse()
+        .map(() => false)
+    );
   };
 
   useEffect(() => {
@@ -36,12 +43,21 @@ const Match = ({ setTab, setMatchId }) => {
               <label
                 className="icon"
                 htmlFor={[matches.length - index - 1]}
-                onClick={() => setSwap((prev) => !prev)}
+                onClick={() =>
+                  setSwaps(() => {
+                    return swaps.map((current, ind) => {
+                      if (index === ind) {
+                        return !current;
+                      }
+                      return current;
+                    });
+                  })
+                }
               >
-                <div className={swap === true ? "active" : "appear"}>
+                <div className={swaps[index] === true ? "active" : "appear"}>
                   <span class="material-symbols-outlined">close</span>
                 </div>
-                <div className={swap === false ? "active" : "appear"}>
+                <div className={swaps[index] === false ? "active" : "appear"}>
                   <span className="material-symbols-outlined">
                     open_in_full
                   </span>
