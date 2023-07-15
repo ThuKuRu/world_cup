@@ -3,6 +3,7 @@ import TopNav from "./TopNav/TopNav";
 import Match from "../Match/Match";
 import Footballers from "../Footballers/Footballers";
 import Statistics from "../Statistics/Statistics";
+import MatchDetail from "../Match/MatchDetail/MatchDetail";
 import Ranks from "../Ranks/Ranks";
 import { TABS } from "../../constants/index";
 import Footer from "./Footer/Footer";
@@ -20,6 +21,7 @@ const Layout = () => {
       {tab === TABS.FOOTBALLERS && <Footballers setTab={setTab} />}
       {tab === TABS.STATISTICS && <Statistics setTab={setTab} />}
       {tab === TABS.RANKS && <Ranks setTab={setTab} />}
+      {tab === TABS.DETAIL && <MatchDetail matchId={matchId} />}
       <Footer />
     </div>
   );
