@@ -6,7 +6,6 @@ import { TABS } from "../../constants/index";
 const Match = ({ setTab, setMatchId }) => {
   const [matches, setMatches] = useState([]);
   const [dates, setDates] = useState([]);
-  const [swap, setSwap] = useState(false);
   const [swaps, setSwaps] = useState([]);
 
   const fetchData = async () => {
