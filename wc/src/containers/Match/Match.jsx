@@ -54,7 +54,7 @@ const Match = ({ setTab, setMatchId }) => {
                 }
               >
                 <div className={swaps[index] === true ? "active" : "appear"}>
-                  <span class="material-symbols-outlined">close</span>
+                  <span className="material-symbols-outlined">close</span>
                 </div>
                 <div className={swaps[index] === false ? "active" : "appear"}>
                   <span className="material-symbols-outlined">
@@ -116,7 +116,7 @@ const Match = ({ setTab, setMatchId }) => {
                           <div
                             className="createButton"
                             onClick={() => {
-                              setMatchId(subMatch.idMatch);
+                              setMatchId(subMatch.IdMatch);
                               setTab(TABS.DETAIL);
                             }}
                           >

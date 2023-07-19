@@ -21,6 +21,7 @@ const TopNavStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  z-index: 100;
   .TopRight {
     margin-left: 3em;
     .logo {
