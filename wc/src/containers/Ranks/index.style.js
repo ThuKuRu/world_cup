@@ -5,6 +5,8 @@ const RankStyle = styled.div`
   margin-top: 60px;
   justify-content: center;
   margin-bottom: 30px;
+  font-family: "Barlow", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   .center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

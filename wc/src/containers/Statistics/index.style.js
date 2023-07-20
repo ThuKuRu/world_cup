@@ -4,6 +4,8 @@ const StatisticsStyle = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  font-family: "Barlow", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   .statistics {
     display: flex;
     flex-direction: column;

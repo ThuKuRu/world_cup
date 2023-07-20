@@ -8,6 +8,7 @@ const StatisticalStyle = styled.div`
   font-family: "Barlow", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   .statistical {
+    font-weight: 600;
     .matchStatistical {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

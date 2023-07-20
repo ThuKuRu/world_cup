@@ -7,6 +7,8 @@ const FootballerStyle = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   a {
     text-decoration: none;
     color: #000;

@@ -8,7 +8,7 @@ const MatchDetailStyle = styled.div`
   font-family: "Roboto Condensed", sans-serif;
   a {
     text-decoration: none;
-    color: blue;
+    color: #000;
   }
   .container {
     width: 80%;
@@ -43,6 +43,10 @@ const MatchDetailStyle = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        .teamName {
+          font-size: 20px;
+          font-weight: 600;
+        }
         .win {
           display: flex;
           justify-content: flex-start;
@@ -79,9 +83,11 @@ const MatchDetailStyle = styled.div`
       }
       .goalLeft {
         margin-left: 20%;
+        font-weight: 600;
       }
       .goalRight {
         margin-right: 20%;
+        font-weight: 600;
         .win {
           display: flex;
           justify-content: flex-end;
@@ -93,6 +99,7 @@ const MatchDetailStyle = styled.div`
       display: flex;
       justify-content: center;
       margin-bottom: 1em;
+      font-weight: 600;
     }
     .video {
       position: relative;

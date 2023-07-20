@@ -46,7 +46,9 @@ const MatchDetail = ({ matchId }) => {
         <div className="teams">
           <div className="team">
             <img className="nationImg" src={home.PictureUrl} alt="/" />
-            <a href={details.LinkHomeTeam}>{home.TeamName}</a>
+            <a href={details.LinkHomeTeam} className="teamName">
+              {home.TeamName}
+            </a>
           </div>
           <div className="score">
             <div className="matchScore">
@@ -62,7 +64,9 @@ const MatchDetail = ({ matchId }) => {
           </div>
           <div className="team">
             <img className="nationImg" src={away.PictureUrl} alt="/" />
-            <a href={details.LinkAwayTeam}>{away.TeamName}</a>
+            <a href={details.LinkAwayTeam} className="teamName">
+              {away.TeamName}
+            </a>
           </div>
         </div>
         <div className="goals">

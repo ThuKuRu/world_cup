@@ -13,10 +13,7 @@ const DevelopmentStyle = styled.div`
   }
   .container {
     width: 100%;
-    span {
-      margin-left: 49%;
-      font-weight: 600;
-    }
+    justify-content: center;
     .title {
       font-size: 20px;
       font-weight: 600;

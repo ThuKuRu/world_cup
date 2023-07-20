@@ -21,7 +21,6 @@ const Development = ({ matchId }) => {
   return (
     <DevelopmentStyle>
       <div className="container">
-        <span className="material-symbols-outlined time">timer</span>
         <div className="title">KẾT THÚC TRẬN ĐẤU</div>
       </div>
       {events.map((event) => (

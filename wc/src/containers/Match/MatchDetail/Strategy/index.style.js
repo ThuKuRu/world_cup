@@ -3,6 +3,8 @@ import styled from "styled-components";
 const StrategyStyle = styled.div`
   display: flex;
   justify-content: center;
+  font-family: "Barlow", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   a {
     text-decoration: none;
     color: #000;
