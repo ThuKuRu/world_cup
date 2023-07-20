@@ -74,7 +74,7 @@ const Match = ({ setTab, setMatchId }) => {
                 />
                 <div className="matches">
                   {match.map((subMatch) => (
-                    <div className="match">
+                    <div className="match" key={subMatch.IdMatch}>
                       <div className="subMatch">
                         <div className="title">
                           <p>{subMatch.groupStage}</p>
