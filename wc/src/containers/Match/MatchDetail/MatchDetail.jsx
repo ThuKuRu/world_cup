@@ -158,7 +158,9 @@ const MatchDetail = ({ matchId }) => {
         <div className="component">
           {changes === "details" && <Development matchId={matchId} />}
           {changes === "strategy" && <Strategy matchId={matchId} />}
-          {changes === "statistical" && <Statistical matchId={matchId} />}
+          {changes === "statistical" && (
+            <Statistical matchId={matchId} away={away} home={home} />
+          )}
           {changes === "new" && <New />}
         </div>
       </div>
