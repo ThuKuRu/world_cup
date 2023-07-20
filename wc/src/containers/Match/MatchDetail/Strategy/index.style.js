@@ -11,7 +11,7 @@ const StrategyStyle = styled.div`
     font-weight: 600;
   }
   .stratery {
-    width: 80%;
+    width: 60%;
     .title {
       display: flex;
       margin-top: 1em;

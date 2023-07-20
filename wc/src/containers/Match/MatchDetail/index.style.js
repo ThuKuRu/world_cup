@@ -139,7 +139,7 @@ const MatchDetailStyle = styled.div`
       text-align: center;
       justify-content: center;
       align-items: center;
-      height: 50px;
+      height: 60px;
       width: auto;
       margin-top: -0.5em;
       color: #fff;

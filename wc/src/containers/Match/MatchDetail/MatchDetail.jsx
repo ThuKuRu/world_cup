@@ -165,7 +165,7 @@ const MatchDetail = ({ matchId }) => {
           {changes === "statistical" && (
             <Statistical matchId={matchId} away={away} home={home} />
           )}
-          {changes === "new" && <New />}
+          {changes === "new" && <New away={away} home={home} />}
         </div>
       </div>
     </MatchDetailStyle>
